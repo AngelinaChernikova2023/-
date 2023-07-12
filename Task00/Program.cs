@@ -3,9 +3,9 @@
 // 2. и выдает его квадрат.
 // например: 4 -> 16
 
-Console.WriteLine ("Введите число");
+Console.WriteLine ("Введите целое число");
 string str = Console.ReadLine();
 int num = Convert.ToInt32(str);
 int Square = num * num;
-Console.WriteLine (Square);
+Console.WriteLine ($"Квадрат числа = {Square}");
 
