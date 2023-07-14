@@ -14,9 +14,10 @@ int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 int reminder = IsMultiplicity(firstNumber, secondNumber);
 
-if (reminder == 0) Console.WriteLine("Кратно");
-else Console.WriteLine($"Не кратно, остаток {reminder}");
+// if (reminder == 0) Console.WriteLine("Кратно");
+// else Console.WriteLine($"Не кратно, остаток {reminder}");
 
+Console.WriteLine(reminder == 0 ? "кратно" : $"не кратно, остаток {reminder}");
 int IsMultiplicity(int firstNumber, int secondNumber)
 {
     return firstNumber % secondNumber;
