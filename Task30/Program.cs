@@ -12,10 +12,10 @@ int[] array = new int[8]; // по умолчанию массив заполня
 FillArray(array);
 
 void FillArray (int[] arr)
-{
+{   Random rnd = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(2); // arr[i] = new Random().Next(0, 2)
+        arr[i] = rnd.Next(2); // arr[i] = new Random().Next(0, 2)
     }
 } 
 
