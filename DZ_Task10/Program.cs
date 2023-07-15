@@ -28,3 +28,4 @@ else
 // int secondDight = firstDight * 10 + thirdDight;
 // Console.WriteLine($"Вторая цифра числа: {secondDight}");
 // }
+//
