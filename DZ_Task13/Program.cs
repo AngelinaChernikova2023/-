@@ -16,23 +16,17 @@ if (number >= 100 && number <= 999)
     int thirdNumber = number % 10;
     Console.WriteLine($"Третья цифра числа: {thirdNumber}");
 }
-// if
-// {   
-//     while(number >= 100 && number <=999)
-// {
-//     Console.WriteLine($"Третья цифра числа: {number}");
-//     return;
-// }
-// }
 else
 {
     int result = -1;
+    if (number >= 100)
+    {
     while (number > 999)
     {
        number = number / 10;
     }  
     result = number % 10;
-
+    }
     Console.WriteLine($"Третья цифра числа: {result}");
     return;
 }
