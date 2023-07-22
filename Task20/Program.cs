@@ -21,8 +21,8 @@ Console.Write("Расстояние между A и B: " + distRound);
 
 double GetDistance(int a1, int a2, int b1, int b2)
 {
-    double firstCatet = b1 - b2;
-    double secondCatet = a1 - a2;
+    double firstCatet = b1 - a1;
+    double secondCatet = b2 - a2;
     double distance = Math.Sqrt(firstCatet * firstCatet + secondCatet * secondCatet);
     return distance;
 }
