@@ -3,8 +3,6 @@
 // и выдает таблицу квадратов чисел
 // от 1 до N
 
-Console.WriteLine("Введите целое число А");
-int number = Convert.ToInt32(Console.ReadLine());
 
 // Console.Write(«Таблица квадратов:\n»);
 // for (int i = 1; i <= n; i++)
@@ -12,15 +10,30 @@ int number = Convert.ToInt32(Console.ReadLine());
 //     int k = i * i;
 //     Console.Write($»{ k}, «);
 // }
+Console.WriteLine("Введите целое число А");
+int number = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 1; i <= number; i++)
-{
-    Console.WriteLine($"{i * i} ");
-}
+TableSquare(number);
 
-// Функция ввода сообщения
-int ReadInt(string message)
+void TableSquare(int num)
 {
-    Console.WriteLine(message);
-    return Convert.ToInt32(Console.ReadLine());
+    int count = 1;
+    while (count <= num)
+    {
+        Console.WriteLine($"{count} | {count * count}");
+        count++;
+    }
 }
+// Другое решение!!!
+
+// for (int i = 1; i <= number; i++)
+// {
+//     Console.WriteLine($"{i * i} ");
+// }
+
+// // Функция ввода сообщения
+// int ReadInt(string message)
+// {
+//     Console.WriteLine(message);
+//     return Convert.ToInt32(Console.ReadLine());
+// }
