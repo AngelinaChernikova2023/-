@@ -87,6 +87,8 @@ int[] SumPositiveNegativeElem(int[] arr)
 
 int[] array = CreateArrayRndInt(12, -9, 9);
 PrintArray(array);
+Console.WriteLine();
+
 int sumPositiveElem = SumPositiveElem(array);
 int sumNegativeElem = SumNegativeElem(array);
 
