@@ -9,21 +9,29 @@
 Console.WriteLine("Введите целое число А");
 int number = Convert.ToInt32(Console.ReadLine());
 
-// Console.Write(«Таблица кубов:\n»);
-// for (int i = 1; i <= n; i++)
+TableSquare(number);
+
+void TableSquare(int num)
+{
+    int count = 1;
+    while (count <= num)
+    {
+        Console.WriteLine($"{count} | {count * count * count}");
+        count++;
+    }
+}
+// Другое решение!!!
+// Console.WriteLine("Введите целое число А");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// for (int i = 1; i <= number; i++)
 // {
-//     int k = i * i * i;
-//     Console.Write($»{ k}, «);
+//     Console.WriteLine($"{i * i * i} ");
 // }
 
-for (int i = 1; i <= number; i++)
-{
-    Console.Write($"{i * i * i} ");
-}
-
-// Функция ввода сообщения
-int ReadInt(string message)
-{
-    Console.WriteLine(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
+// // Функция ввода сообщения
+// int ReadInt(string message)
+// {
+//     Console.WriteLine(message);
+//     return Convert.ToInt32(Console.ReadLine());
+// }
