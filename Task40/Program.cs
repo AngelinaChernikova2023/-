@@ -16,9 +16,13 @@ bool isTriagle = IsTriagleExists(num1, num2, num3);
 Console.WriteLine(isTriagle? "Треугольник существует" : "Треугольник не существует");
 
 bool IsTriagleExists(int a, int b, int c)
+// {
+//     if (a < b + c && b < a + b && c < a + b)
+//     return true;
+// return false;
+// }
 {
-    if (a < b + c && b < a + b && c < a + b)
-    return true;
-return false;
+    return a < b + c && b < a + b && c < a + b;
 }
+
 
