@@ -39,25 +39,3 @@ void PrintMatrix(int[,] matrix)
 
 int[,] array2d = CreateMatrixRndInt(3, 4, -100, 100);
 PrintMatrix(array2d);
-// // [1 2 3 4 5] -> [5 4 3 2 1]
-// void ReversArray (int[] arr)
-// {
-//     for (int i = 0; i < arr.Length / 2; i++)
-//     {
-//         int temp = arr[i];
-//         arr[i] = arr[arr.Length - 1 - i];
-//         arr[arr.Length - 1 - i] = temp;
-//     }
-// }
-
-// int[] array = CreateArrayRndInt(5, -9, 9);
-// PrintArray(array);
-// Console.WriteLine();
-// ReversArray(array);
-// PrintArray(array);
-// Console.WriteLine();
-
-// //Встроенный метод разворота массива!!!
-// Array.Reverse(array);
-// PrintArray(array);
-
