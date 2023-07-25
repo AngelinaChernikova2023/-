@@ -7,7 +7,7 @@
 // 1 2 3 4
 // 2 3 4 5
 
-int[,] CreateMatrixInt(int rows, int columns, int min, int max)
+int[,] CreateMatrixSumIndexes(int rows, int columns, int min, int max)
 {
     int[,] matrix = new int[rows, columns];
 
@@ -35,5 +35,5 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int[,] array2d = CreateMatrixInt(3, 4, -100, 100);
+int[,] array2d = CreateMatrixSumIndexes(3, 4, -100, 100);
 PrintMatrix(array2d);
