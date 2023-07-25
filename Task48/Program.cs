@@ -7,7 +7,7 @@
 // 1 2 3 4
 // 2 3 4 5
 
-int[,] CreateMatrixSumIndexes(int rows, int columns, int min, int max)
+int[,] CreateMatrixSumIndexes(int rows, int columns)
 {
     int[,] matrix = new int[rows, columns];
 
@@ -29,11 +29,11 @@ void PrintMatrix(int[,] matrix)
     Console.Write("[ ");
     for (int n = 0; n < matrix.GetLength(1); n++)
     {
-        Console.Write($"{matrix[m, n], 4} ");
+        Console.Write($"{matrix[m, n], 5} ");
     }
     Console.WriteLine("]    ");
     }
 }
 
-int[,] array2d = CreateMatrixSumIndexes(3, 4, -100, 100);
+int[,] array2d = CreateMatrixSumIndexes(3, 4);
 PrintMatrix(array2d);
