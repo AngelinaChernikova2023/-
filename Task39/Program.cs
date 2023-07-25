@@ -40,7 +40,7 @@ ReversArray(array);
 PrintArray(array);
 Console.WriteLine();
 
-//Встроенный метод!!!
+//Встроенный метод разворота массива!!!
 Array.Reverse(array);
 PrintArray(array);
 
