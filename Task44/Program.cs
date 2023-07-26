@@ -35,6 +35,12 @@ void PrintArray(int[] arr)
 }
 
 
-Console.WriteLine("Введите размер для массива");
+Console.WriteLine("Введите размер для массива, больше двух");
 int size = Convert.ToInt32(Console.ReadLine());
+if (size < 2)
+{
+    Console.WriteLine("Неверное значение");
+    return;
+}
+
 PrintArray(Fibonacci(size));
