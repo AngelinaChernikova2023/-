@@ -53,8 +53,27 @@ void PrintArray (int[] arr)
     {
         Console.Write($"{arr[i]} ");
     }
-    Console.Write("]    ");
+    Console.WriteLine("]    ");
 }
+
+void FrequnceDictionary(int[] array1d)
+{
+    int currentNumber = array1d[0];
+    int count = 1;
+    for (int i = 1; i < array1d.Length; i++)
+    {
+        if (array1d[i] == currentNumber) count++;
+        else
+        {
+            Console.WriteLine($"Количество символов {currentNumber} содержится {count} раз");
+            count = 1;
+            currentNumber = array1d[i];
+        }        
+    }
+    Console.WriteLine($"Количество символов "
+    + $"{currentNumber} содержится {count} раз");
+}
+
 
 int[,] array2d = CreateMatrixRndInt(4, 3, 1, 9);
 PrintMatrix(array2d);
@@ -63,3 +82,5 @@ Console.WriteLine();
 int[] arrMain = MatrixToArray(array2d);
 Array.Sort(arrMain);
 PrintArray(arrMain);
+
+FrequnceDictionary(arrMain);
